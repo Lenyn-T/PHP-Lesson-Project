@@ -9,10 +9,10 @@
     <h1 align="center"> Registration Form </h1>
     <form method="post">
         <label> Name: <input type="text" name="username" size="60" required></label><br><br>
-        <label> Address: <input type="text" name="address" size="50" required></label>
+        <label> Address: <input type="text" name="address" size="40" required></label>
         <label> #: <input type="text" name="adrss_num" size="10" required></label><br><br>
-        <label> Neighborhood: <input type="text" name="neighbr" size="30" required></label>
-        <label> City: <input type="text" name="city" size="30" required></label><br><br>
+        <label> Neighborhood: <input type="text" name="neighbr" size="21" required></label>
+        <label> City: <input type="text" name="city" size="20" required></label><br><br>
         <label> State: <select name="" id="">
             <option value="">XX</option>
             <option value="AC">AC</option>
@@ -43,16 +43,18 @@
             <option value="SE">SE</option>
             <option value="TO">TO</option>
         </select></label>
-        <label> Post code: <input type="text" name="cep" placeholder="00000-000" maxlength="10"></label><br><br>
-        <label> Landline #: <input type="tel" name="tel"></label>
-        <label> Mobile #: <input type="tel" name="mobile" required></label><br><br>
+        <label> Post code: <input type="text" name="cep" size="17" placeholder="00000-000" maxlength="10"></label>
         <label> Birthdate: <input type="date"></label><br><br>
+        <label> Landline #: <input type="tel" name="tel" size="20"></label>
+        <label> Mobile #: <input type="tel" name="mobile" size="20" required></label><br><br>
         <fieldset style="width: 30%">
             <legend>Martial Status</legend>
             <input type="radio" name="mar_stat" value="married"> Married
             <input type="radio" name="mar_stat" value="single"> Single
             <input type="radio" name="mar_stat" value="divorced"> Divorced
-        </fieldset>
+        </fieldset><br>
+        <input type="submit">
+        <input type="reset">
     </form>
 </body>
 </html>
