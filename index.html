@@ -6,14 +6,14 @@
     <title>PHP Form Start</title>
 </head>
 <body>
-    <h1 align="center"> Registration Form </h1>
+    <h1 align="center"> Registration Form (non functional)</h1>
     <form method="post">
         <label> Name: <input type="text" name="username" size="60" required></label><br><br>
         <label> Address: <input type="text" name="address" size="40" required></label>
         <label> #: <input type="text" name="adrss_num" size="10" required></label><br><br>
         <label> Neighborhood: <input type="text" name="neighbr" size="21" required></label>
         <label> City: <input type="text" name="city" size="20" required></label><br><br>
-        <label> State: <select name="" id="">
+        <label> State: <select name="UF">
             <option value="">XX</option>
             <option value="AC">AC</option>
             <option value="AL">AL</option>
@@ -55,6 +55,21 @@
         </fieldset><br>
         <input type="submit">
         <input type="reset">
+    </form>
+
+    <h1 align="center">Input 3 test results to grade</h1>
+    <form method="get" action="activity_grade.php">
+        <label> Grade 1 <input type="number" name="gr1"></label><br>
+        <label> Grade 2 <input type="number" name="gr2"></label><br>
+        <label> Grade 3 <input type="number" name="gr3"></label><br>
+        <input type="reset"><input type="submit">
+    </form>
+
+    <h1 align="center">Calculate profit percentage</h1>
+    <form action="activity_profit.php" method="get">
+        <h6>Profit at 45% under 200$, 30% otherwise.</h6>
+        <label> Input sale value <input type="number" name="sale"></label><br>
+        <input type="submit">
     </form>
 </body>
 </html>
