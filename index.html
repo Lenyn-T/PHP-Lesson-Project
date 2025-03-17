@@ -71,5 +71,32 @@
         <label> Input sale value <input type="number" name="sale"></label><br>
         <input type="submit">
     </form>
+
+    <h1 align="center">Calculate factorial</h1>
+    <form method="get" action="activity_factorial.php">
+        <label>Input an integer value <input type="number" name="fact"></label><br>
+        <input type="submit">
+    </form>
+
+    <h1 align="center">Convert month number to word</h1>
+    <form method="get" action="activity_months.php">
+        <label>Input a month in number <input type="number" name="month"></label><br>
+        <input type="submit">
+    </form>
+
+    <h1 align="center">Simple calculator</h1>
+    <form action="activity_calc.php" method="get">
+        <label>Number 1 <input type="number" name="num1"></label><br>
+        <label>Number 2 <input type="number" name="num2"></label><br>
+        <label>Operation <select name="calcOpr">
+            <option value="sum">+</option>
+            <option value="sub">-</option>
+            <option value="div">÷</option>
+            <option value="mul">*</option>
+            <option value="sqr">√</option>
+        </select></label>
+        <input type="submit">
+    </form>
+    <br><br><br><br>
 </body>
 </html>
