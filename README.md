@@ -4,6 +4,8 @@ Created for education purposes
 Clipboard for repeated login  
 git config --global user.email "lenyn.taka@gmail.com"  
 git config --global user.name "Lenyn-T"  
+
+Access xampp database: localhost:80/dashboard  
   
 SQL for database  
 CREATE TABLE especialidade(  
