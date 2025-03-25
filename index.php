@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Form Start</title>
+    <title>PHP Form 0</title>
 </head>
 <body>
     <h1 align="center">Input 3 test results to grade</h1>
@@ -48,14 +48,15 @@
     </form>
 
     <h1 align="center">Operações com banco de dados</h1>
-    <p><h2>Inclusão: Especialidade médica</h2></p> 
+    <h2>Inclusão: Especialidade médica</h2>
+    <h3><a href="consulta_especialidade.php">Consultar Especialidades</a></h3>
     <form method="POST" action="inc_esp.php">
         <div>                
-            <p><label> Descrição da especialidade: </label>
+            <label> Descrição da especialidade: </label>
             <input type="text" name="nome" maxlength="100" required>
         </div>
         <div>
-            <p><label> Sigla: </label>
+            <label> Sigla: </label>
             <input type="text" name="sigla" maxlength="3" required>
         </div>
         <div>
@@ -124,7 +125,7 @@
         <input type="submit">
         <input type="reset">
     </form>
-
+    
     <br><br><br><br>
 </body>
 </html>
