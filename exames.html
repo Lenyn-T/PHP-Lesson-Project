@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exames</title>
+</head>
+<body>
+    <h1>Cadastrar tipos de exames</h1>
+    <h3><a href="exames_consultar.php">Consultar exames cadastrados</a></h3>
+    <form action="exames_incluir.php" method="get">
+        <label> Nome: <input type="text" name="exa_nome" size="60" maxlength="80"></label><br>
+        <label> Sigla: <input type="text" name="exa_sigla" maxlength="4" size="6"></label>
+        <label> Preço: <input type="number" name="exa_preco"></label><br><br>
+        <label> Observações: <br><input type="text" name="exa_obs" size="120" maxlength="200"></label><br><br>
+        <input type="submit"><input type="reset">
+    </form>    
+</body>
+</html>

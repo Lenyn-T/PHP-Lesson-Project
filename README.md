@@ -5,7 +5,7 @@ Clipboard for repeated login
 git config --global user.email "lenyn.taka@gmail.com"  
 git config --global user.name "Lenyn-T"  
 
-Project index access link: localhost/php-lesson-project/index.php
+Project index access link: localhost/php-lesson-project/index.php  
 Access xampp database: localhost:80/dashboard  
   
 SQL for database  
@@ -33,3 +33,10 @@ CREATE TABLE medico(
 ALTER TABLE medico ADD CONSTRAINT fk_espe  
 FOREIGN KEY (cod_esp) REFERENCES especialidade (id);  
   
+CREATE TABLE exames (  
+    id_exame INT AUTO_INCREMENT PRIMARY KEY,  
+    nome VARCHAR(80),  
+    sigla CHAR(4),  
+    preco_exame FLOAT,  
+    observacao VARCHAR(200)  
+)  
